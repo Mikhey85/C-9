@@ -18,7 +18,7 @@ Console.Clear();
     }
     return val;
 }
-int AkkermanFunc(int m, int n)
+int AkkermanFunction(int m, int n)
 {
     if(m == 0)
     {
@@ -26,15 +26,15 @@ int AkkermanFunc(int m, int n)
     }
     if(m > 0 && n == 0)
     {
-        return AkkermanFunc(m - 1, 1);
+        return AkkermanFunction(m - 1, 1);
     }
-    return AkkermanFunc(m - 1, AkkermanFunc(m, n - 1));
+    return AkkermanFunction(m - 1, AkkermanFunction(m, n - 1));
 }
 
 int M = Prompt("Введиче число m: ");
 int N = Prompt("Введиче число n: ");
 if  (M>= 0 && N>=0)
 {
-    Console.WriteLine(AkkermanFunc(M,N));
+    Console.WriteLine(AkkermanFunction(M,N));
 } else 
 Console.WriteLine("Введены не верные значения M и N должны быть не отрицательные.");
