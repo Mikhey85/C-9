@@ -27,8 +27,8 @@ int SumNaturalNumber(int start ,int stop)
 }
 
 
-int M = Prompt("Введиче число M : ");
-int N = Prompt("Введиче число N : ");
+int M = Prompt("Введиче число M: ");
+int N = Prompt("Введиче число N: ");
 if  (M>N)
 {
     int temp = N;
